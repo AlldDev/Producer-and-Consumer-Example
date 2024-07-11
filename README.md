@@ -1,4 +1,4 @@
-# Exemplo prático do conceito "Producers and Consumers"
+# Exemplos práticos do conceito "Producer and Consumer"
 O conceito de Producers and Consumers foi inicialmente pensado e descrito por Edsger W. Dijkstra em 1965.
 
 ![Imagem Producer and Consumer](img1.jpg)
