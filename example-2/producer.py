@@ -2,7 +2,7 @@ import queue
 import threading
 import time
 
-class Client_producer:
+class Producer:
     def __init__(self, fila, fila_lock, fila_event):
         self._fila = fila
         self._fila_lock = fila_lock
@@ -10,10 +10,10 @@ class Client_producer:
 
     def producer(self):
         while True:
-            time.sleep(3)
             #self._fila.put('Hello World')
+            time.sleep(3)
           
             with self._fila_lock:
-                print('Client: Produzi algo')
                 self._fila.append('Hello World')
+                print(f'Producer: Produzi algo: {self._fila[-1]}')
                 self._fila_event.set()
